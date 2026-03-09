@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="hlo">Hello</h1>
+
+    <div class="container">
+        <div class="box" id="red">Red</div>
+        <div class="box" id="blue">Blue</div>
+        <div class="box" id="green">Green</div>
+        <div class="box" id="yellow">Yellow</div>
+
+ 
+    </div>
+ 
+    <input type="text" id="name" placeholder="Enter your name">
+    <button id="btn">Greet</button>
+
+<script>
+        
+    let button = document.getElementById("btn");
+    let input = document.getElementById("name");
+    let heading = document.getElementById("hlo");
+
+    button.onclick = function() {
+        let userName = input.value;
+        heading.innerText = "Hello, " + userName;
+    }
+
+    let redBox = document.getElementById("red");
+    let blueBox = document.getElementById("blue");
+    let greenBox = document.getElementById("green");
+    let yellowBox = document.getElementById("yellow");
+
+    redBox.onclick = function(){
+        redBox.style.backgroundColor = "red";
+        redBox.style.color = "white";
+    }
+    
+    blueBox.onclick = function(){
+        blueBox.style.backgroundColor = "blue";
+        blueBox.style.color = "white";
+    }
+
+    greenBox.onclick = function(){
+        greenBox.style.backgroundColor = "green";
+        greenBox.style.color = "white";
+    }
+
+    yellowBox.onclick = function(){
+        yellowBox.style.backgroundColor = "yellow";
+    }
+
+    
+</script>
+
+</body>
+</html>
